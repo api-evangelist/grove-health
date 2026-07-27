@@ -1,8 +1,25 @@
 aid: grove-health
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/grove-health.png
 name: Grove Health
-description: Grove Health is a company surfaced as a portfolio company of general-catalyst and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: 'Grove Health (Grove Medical Inc.) is a North American B2B healthcare
+  supplies distributor operating an online catalog covering medical equipment and
+  consumables, including nursing supplies, diagnostics, wound care, incontinence products,
+  examination gloves, respiratory equipment, and related healthcare items. The company
+  serves healthcare facilities and providers through a self-service e-commerce storefront.
+  It has been backed by General Catalyst since 2021. No public API, developer program,
+  or machine-readable interface was found during enrichment; this profile captures
+  the company identity and its public web surface.'
 url: https://raw.githubusercontent.com/api-evangelist/grove-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,42 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 tags:
 - Company
+- Healthcare
+- Medical Supplies
+- Distribution
+- E-Commerce
+- Medical Equipment
+- B2B
 apis: []
+common:
+- type: DomainSecurity
+  url: security/grove-health-domain-security.yml
+- type: Website
+  url: https://www.grovemedical.com/
+- type: SignUp
+  url: https://www.grovemedical.com/default.aspx?Page=New%20Shopper
+- type: Login
+  url: https://www.grovemedical.com/Default.aspx?Page=Logon
+- type: Support
+  url: https://www.grovemedical.com/?page=customer&file=customer/grmein/customerpages/Resources/Help.htm
+- type: Blog
+  url: https://grovemedical.wordpress.com/
+- type: TermsOfService
+  url: https://www.grovemedical.com/?page=customer&file=customer/grmein/customerpages/Terms_Conditions.htm
+- type: PrivacyPolicy
+  url: https://www.grovemedical.com/?page=customer&file=customer/grmein/customerpages/Privacy_Statement.htm
+- type: LinkedIn
+  url: https://www.linkedin.com/company/grove-medical-inc./
+- type: Twitter
+  url: https://twitter.com/GroveMed
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
